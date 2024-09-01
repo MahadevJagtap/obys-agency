@@ -12,24 +12,20 @@ html,body{
 }
 .main{
   position: relative;
-  background-color: #111;
+  background-color:#030303 ;
 }
-.page1{
-  width: 100vh;
-  height: 100%;
-  background-color: #0b0b0b;
-}
+
 .loader{
   width: 100%;
   height: 100%;
-  background-color: #0b0b0b;
-  z-index: 999;
+  background-color: #030303;
+  z-index: 9999;
   padding: 25vh 10vw;
   position: fixed;
 }
 .line{
   height:fit-content;
-  /* background-color: red; */
+  /* background-color: rgit branch -M mained; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -55,12 +51,62 @@ text-align: right;
 /* background-color: red; */
 }
 .line h2{
-  font-size: 6.5vw;
+  font-size: 5vw;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 500;
+ opacity: 0;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  
+}
+@keyframes anime {
+  0%{
+    font-family: "plain light";
+    -webkit-text-stroke: 1px white;
+  font-weight: 500;
+  color: white;
+  opacity: 1;
+  }
+  48%{
+    font-family: "plain light";
+    -webkit-text-stroke: 1px white;
+  font-weight: 500;
+  color:white;
+  opacity: 0;
+  
+
+  }
+  50%{
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px white;
+  font-weight: 500;
+  color: transparent;
+  opacity: 1;
+
+  }
+  100%{
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 500;
+    opacity: 0;
+
+  }
 }
 .line h1{
   font-size: 6.5vw;
   text-transform: uppercase;
   font-weight: 900;
+}
+.page1{
+  width: 100%;
+  height: 100vh;
+  background-color:#151515
+}
+.last h3{
+  font-size: 13px;
+font-weight:100;
+position: relative;
+margin-top: 30px;
+left: 25%;
 }
