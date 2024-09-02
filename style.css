@@ -148,7 +148,17 @@ display: flex;
   line-height: 7.5vw;
   text-transform: uppercase;
 font-weight: 600;
+position: relative;
 letter-spacing: 0.25vw;
+}
+#hero1:before{
+  content: "01";
+  font-size: 3.6vw;
+font-family: "silk serif";
+font-weight: 300;
+position: absolute;
+left: 20%;
+top: 29%;
 }
 .hero:nth-child(2){
   margin-top: 9vh;
@@ -176,6 +186,7 @@ padding-bottom: 0.7vw;
   -webkit-text-stroke: 1px #fff;
   color: transparent;
   font-weight: 500;
+  z-index: 999;
   border-bottom: 0.7vw solid #ffffff00;
 }
 .page2{
@@ -249,6 +260,16 @@ padding-bottom: 2vw;
   font-size: 7.5vw;
   text-transform: uppercase;
   font-weight: 600;
+  position: relative;
+}
+.first h1::before{
+  content: "03";
+  font-size: 3.6vw;
+font-family: "silk serif";
+font-weight: 300;
+position: absolute;
+left: -13%;
+top: 5%;
 }
 .underline{
   height: 0.1vw;
@@ -326,10 +347,13 @@ h4{
 .elem{
  white-space: nowrap;
   overflow-x: hidden;
+  overflow-y: hidden;
+
 }
 .elem2{
   white-space: nowrap;
    overflow-x: hidden;
+   overflow-y: hidden;
  }
 .elem h2{
   font-size: 7vw;
@@ -370,8 +394,7 @@ margin-bottom :-5vw;
   }
   to{
     transform: translateX(calc(-100% - 20px));
-  }
-  
+  } 
 }
 .page5 span{
   font-style: italic;
@@ -381,6 +404,50 @@ margin-bottom :-5vw;
 }
 .page6{
   width: 100%;
+  position: relative;
   height: 100vh;
+  padding-left: 28%;
   background-color: #151515;
+}
+.page6>h1{
+  font-size: 7.5vw;
+text-transform: uppercase;
+margin-bottom: 2vw;
+position: relative;
+}
+.page6>h1::before{
+  content: "04";
+  font-size: 3.6vw;
+font-family: "silk serif";
+font-weight: 300;
+position: absolute;
+left: -13%;
+top: 5%;
+}
+.box{
+  margin-right: 8vw;
+}
+.box h4{
+font-size: 1.2vw;
+font-weight: 800;
+}
+.box h3{
+font-size: 1.9vw;
+font-weight: 500;
+line-height: 2.2vw;
+}
+.boxes{
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ margin-bottom: 5vw;
+}
+.down{
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+margin-bottom: 2vw; 
+}
+.page6>h3{
+  font-weight: 500;
 }
