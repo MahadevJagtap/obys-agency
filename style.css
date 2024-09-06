@@ -19,6 +19,12 @@ body{
   background-color: #151515;
 
 }
+.mousefollower {
+  border: 2px solid #fff;
+  background-color: rgb(255, 255, 255);
+  scale: 2;
+  mix-blend-mode: difference;
+}
 
 .loader{
   width: 100%;
@@ -115,6 +121,8 @@ left: 25%;
   width: 100%;
   height: 100vh;
   position: relative;
+  background-color: red;
+  margin-bottom: 3vw;
   background-color:#151515
 }
 .nav-part1{
@@ -150,6 +158,7 @@ display: flex;
 font-weight: 600;
 position: relative;
 letter-spacing: 0.25vw;
+z-index: 999;
 }
 #hero1:before{
   content: "01";
@@ -158,20 +167,28 @@ font-family: "silk serif";
 font-weight: 300;
 position: absolute;
 left: 20%;
-top: 29%;
+top: 21%;
 }
 .hero:nth-child(2){
-  margin-top: 9vh;
+  margin-top: vh;
 }
-.curser{
-  width: 3.2vw;
-  height: 3.2vw;
-  border-radius: 50%;
-  border: 1px solid #ffffffac;
-transform: translate(-50%,-50%);
-position: fixed;
-z-index: 999;
-mix-blend-mode: difference;
+#hero3{
+  /* background-color: red; */
+  z-index: 999;
+  position: relative;
+  
+}
+#flag{
+  height: 29vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#hero2,#hero4{
+  z-index: 999;
+  position: relative;
 }
 .hero h2{
   font-size: 7.4vw;
@@ -193,26 +210,32 @@ padding-bottom: 0.7vw;
   width: 100%;
   height: 100vh;
 background-color: #151515;
-padding-top :17vh;
+margin-top :-1vw;
 position: relative;
+margin-bottom: -12vw;
+
 }
 .video-container{
   width: 71vw;
-  height: 75vh;
+  height: 85vh;
 margin-left: 28%;
+/* margin-bottom: 20vw */
+position: relative;
 border-radius: 1vw;
+background-color: red;
 /* overflow: hidden; */
 background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
-background-image: cover;
+background-size: cover;
 background-position: center;
-position: relative;
+
 }
 .video-container video{
   width: 100%;
   height:100%;
   object-fit: cover;
+  opacity: 0;
 }
-
+/* 
 .video-container img{
   width: 100%;
   height:100%;
@@ -220,18 +243,18 @@ position: relative;
   position: absolute;
   top: 0;
  
-}
-.play{
+} */
+.play01{
   width: 8vw;
   height: 8vw;
   border-radius: 50%;
   background-color: orange;
   position: absolute;
-top: -10%;
-left: 85%;
+  left: 75%;
+  top:-10%;
 z-index: 999;
 }
-.play i{
+.play01 i{
 font-size: 2vw;
   position: absolute;
   left: 50%;
@@ -242,8 +265,191 @@ font-size: 2vw;
 .page3{
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(74, 73, 73);
+  /* background-color: #bf6969; */
+  padding-bottom: 3vw;
+  position: relative;
+  /* margin-bottom: -8vw; */
 }
+.start{
+  width: 100%;
+padding-bottom: 2vw;
+padding-left: 28%;
+/* background-color: red; */
+}
+.start h1{
+  font-size: 7.5vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+.start h1::before{
+  content: "02";
+  font-size: 3.6vw;
+font-family: "silk serif";
+font-weight: 300;
+position: absolute;
+left: -13%;
+top: 5%;
+}
+.underline007{
+margin-left:28vw ;
+width: 72vw;
+  height: 0.1vw;
+  background-color: #fff;
+}
+.image-container{
+  padding: 3vw 3vw;
+  margin-top: 3vw;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* gap: 10vw; */
+  /* background-color: red; */
+}
+.image1{
+  width: 25vw;
+  position: relative;
+ flex-shrink: 0;
+ margin: 1vw;
+ overflow: hidden;
+  height: 32vw;
+  /* background-color: blue; */
+}
+.image1:nth-child(2){
+  width: 31vw;
+  height: 38vw;
+}
+.image1:nth-child(5){
+  width: 30vw;
+  height: 40vw;
+  margin-top: 16vw;
+}
+.image1:nth-child(6){
+  width: 33vw;
+  height: 40vw;
+  margin-top: 5vw;
+}
+.gola1{
+  width: 24vw;
+  height: 24vw;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48vh;
+  margin-left: 7vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.gola1 svg{
+  height: 35%;
+}
+
+.under{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  /* transition-delay: 0.5s; */
+
+  transition: all ease 0.3s;
+
+  scale: 0; 
+}
+.under p{
+  color: black;
+  width: 70%;
+  font-size: 1vw;
+  font-weight: 600;
+  transition: all ease 0.3s;  
+  transition-delay: 0.3s;
+scale: 0;
+opacity: 0;
+}
+.gola1:hover .under{
+  scale: 1;
+}
+.gola1:hover .under p{
+  scale: 1;
+  opacity: 1;
+}
+.gola2{
+  width: 24vw;
+  height: 24vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  /* margin-top: 48vh; */
+  margin-left: 2vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.gola2 svg{
+  height: 35%;
+  rotate: -45deg;
+}
+.under1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  /* transition-delay: 0.5s; */
+
+  transition: all ease 0.2s;
+
+  scale: 0; 
+}
+.under1 p{
+  color: black;
+  width: 50%;
+  font-size: 1vw;
+  font-weight: 600;
+  transition: all ease 0.3s;  
+  transition-delay: 0.3s;
+scale: 0;
+opacity: 0;
+}
+.gola2:hover .under1{
+  scale: 1;
+}
+.gola2:hover .under1 p{
+  scale: 1;
+  opacity: 1;
+}
+.image1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .page4{
   width: 100%;
   min-height: 100vh;
@@ -251,6 +457,7 @@ font-size: 2vw;
   /* background-color: #bf6969; */
   padding: 3vw 0vw;
   position: relative;
+  margin-bottom: 8vw;
 }
 .first{
   width: 72vw;
@@ -340,8 +547,10 @@ h4{
 }
 .page5{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  margin-top:6vw;
+  /* margin-bottom: 7vw; */
   
 }
 .elem{
@@ -404,10 +613,12 @@ margin-bottom :-5vw;
 }
 .page6{
   width: 100%;
+  /* margin-top: -10vw; */
   position: relative;
-  height: 100vh;
+ height: 100vh;
   padding-left: 28%;
   background-color: #151515;
+  /* margin-bottom:5vw ; */
 }
 .page6>h1{
   font-size: 7.5vw;
@@ -450,4 +661,8 @@ margin-bottom: 2vw;
 }
 .page6>h3{
   font-weight: 500;
+}
+._canvas_container{
+  z-index: 999999 !important;
+  pointer-events: none;
 }

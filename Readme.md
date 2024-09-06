@@ -433,3 +433,53 @@ elem.innerHTML = clutter;
 
 })
 } -->
+
+
+
+<!--   var videoContainer = document.querySelector(".video-container");
+  var video = document.querySelector(".video-container video")
+  videoContainer.addEventListener("mouseenter", function () {
+    videoContainer.addEventListener("mousemove", function (dets) {
+      gsap.to(".mousefollower", {
+        opacity: 0
+      });
+      gsap.to(".play01", {
+        left: dets.x - 600,
+        top: dets.y - 300,
+      });
+    });
+  });
+  videoContainer.addEventListener("mouseleave", function () {
+    gsap.to(".mousefollower", {
+      opacity: 1
+
+    });
+    gsap.to(".play01", {
+      left: "70%",
+      top: "-15%",
+    });
+  });
+
+
+
+  var flag = 0
+  videoContainer.addEventListener("click", function () {
+    if (flag == 0) {
+      video.play()
+      video.style.opacity = 1
+      document.querySelector(".play01").innerHTML = `<i class="ri-pause-mini-fill"></i>`
+      gsap.to(".play01", {
+        scale: 0.5
+      })
+      flag = 1
+    } else {
+      video.pause()
+      video.style.opacity = 0
+      document.querySelector(".play01").innerHTML = `<i class="ri-play-mini-fill"></i>`
+      gsap.to(".play01", {
+        scale: 1
+      })
+      flag = 0
+    }
+  })
+ -->
