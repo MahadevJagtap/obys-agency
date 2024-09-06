@@ -179,12 +179,14 @@ top: 21%;
   
 }
 #flag{
+  opacity: 0;
+  /* display: none; */
   height: 29vw;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+
 }
 #hero2,#hero4{
   z-index: 999;
@@ -620,12 +622,36 @@ margin-bottom :-5vw;
   background-color: #151515;
   /* margin-bottom:5vw ; */
 }
-.page6>h1{
+#footer-text h1{
   font-size: 7.5vw;
 text-transform: uppercase;
 margin-bottom: 2vw;
 position: relative;
 }
+
+#footer-text {
+  position: relative;
+  /* background-color: red; */
+}
+
+#footer-text h2 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  position: absolute;
+  top: -10%;
+  font-weight: 500;
+
+  left: 0;
+  font-family: "silk serif";
+}
+
+#footer-text h2 span {
+  font-family: "silk serif";
+  opacity: 0;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+
 .page6>h1::before{
   content: "04";
   font-size: 3.6vw;

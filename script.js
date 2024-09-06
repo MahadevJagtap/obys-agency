@@ -92,7 +92,9 @@ function curserAnimation(){
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
-  Shery.makeMagnet('.nav-part1 h3')
+
+
+  
 var videocontainer = document.querySelector('.video-container');
 var video = document.querySelector('.video-container video');
 
@@ -172,6 +174,44 @@ function animationremain(){
       })
     })
 }
+function footerAnimation() {
+
+  var clutter = ""
+  var clutter2 = ""
+  document.querySelector(".page6 h1").textContent.split("").forEach(function (elem) {
+    clutter += `<span>${elem}</span>`
+  })
+  document.querySelector(".page6 h1").innerHTML = clutter
+  document.querySelector(".page6 h2").textContent.split("").forEach(function (elem) {
+    clutter2 += `<span>${elem}</span>`
+  })
+  document.querySelector(".page6 h2").innerHTML = clutter2
+
+
+  document.querySelector("#footer-text").addEventListener("mouseenter", function () {
+    gsap.to(".page6 h1 span", {
+      opacity: 0,
+      stagger: 0.05
+    })
+    gsap.to(".page6 h2 span", {
+      delay: 0.35,
+      opacity: 1,
+      stagger: 0.1
+    })
+  })
+  document.querySelector("#footer-text").addEventListener("mouseleave", function () {
+    gsap.to(".page6 h1 span", {
+      opacity: 1,
+      stagger: 0.1,
+      delay: 0.35,
+
+    })
+    gsap.to(".page6 h2 span", {
+      opacity: 0,
+      stagger: 0.05
+    })
+  })
+}
 loadingAnimation()
 
 curserAnimation()
@@ -182,3 +222,4 @@ sheryjs()
 
 animationremain()
 
+footerAnimation()
