@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obys Agency</title>
-<link rel="shortcut icon" href="./mj.png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/mj.png" type="image/x-icon">
+<!-- locomotive css  -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+<!-- shery css  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.css" />
+<!-- remixicon cdn  -->
 <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
 />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-
-<link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<button class="animated jello infinite">animated button</button>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +22,7 @@
     <div class="line">
       <div class="line1-part1">
         <h5>00</h5>
-        <h6>- 100</h6>
+        <h6>-100</h6>
       </div>
       <h1>your</h1>
     </div>
@@ -81,6 +79,7 @@
       <h3>Contacts</h3>
     </div>
   </div>
+  <div class="mainhero">
   <div class="hero" id="hero1">
     <h1>we design</h1>
   </div>
@@ -94,12 +93,13 @@
   <div class="hero" id="hero4">
     <h1>experience</h1>
   </div>
+</div>
   <img id="flag" src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg" alt="">
   </div>
   <div class="page2"data-scroll data-scroll-speed="-0.1">
     <div class="video-container">
       <div class="play01">
-        <i class="ri-play-large-fill"></i>
+        <i class="ri-play-fill"></i>
       </div>
       <video loop src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
     </div>
@@ -111,12 +111,12 @@
      <div class="underline007"></div>
      <div class="image-container">
       <div class="image1">
-        <img src="img1-1.jpg" alt="">
-        <img src="img1-2.jpg" alt="">
+        <img src="images/img1-1.jpg" alt="">
+        <img src="images/img1-2.jpg" alt="">
       </div>
       <div class="image1">
-        <img src="img2-1.jpg" alt="">
-        <img src="img2-2.jpg" alt="">
+        <img src="images/img2-1.jpg" alt="">
+        <img src="images/img2-2.jpg" alt="">
       </div>
       <div class="gola1">
         <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
@@ -139,12 +139,12 @@
       </div>
       </div>
       <div class="image1">
-        <img src="img3-1.jpg" alt="">
-        <img src="img3-2.jpg" alt="">
+        <img src="images/img3-1.jpg" alt="">
+        <img src="images/img3-2.jpg" alt="">
       </div>
       <div class="image1">
-        <img src="img4-1.jpg" alt="">
-        <img src="img4-2.jpg" alt="">
+        <img src="images/img4-1.jpg" alt="">
+        <img src="images/img4-2.jpg" alt="">
       </div>
      </div>
   </div>
@@ -284,18 +284,29 @@
 
 
 
+    <!-- locomotive js  -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="
-https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js
-"></script>
-<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <!-- gsap cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    <!-- scrolltrigger cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Three JS cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- controlKit for debunging -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <!-- Shery JS cdn  -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script>
+
 <script src="script.js"></script>
 </body>
 </html>

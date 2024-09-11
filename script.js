@@ -57,7 +57,7 @@ animationName:'anime'
 tl.to('.loader',{
   opacity:0,
   duration:0.3,
-  delay:0,
+  delay:3.5,
 })
 tl.from('.page1',{
   y:1600,
@@ -92,9 +92,8 @@ function curserAnimation(){
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
+  // Shery.makeMagnet(".nav-part2 h3");
 
-
-  
 var videocontainer = document.querySelector('.video-container');
 var video = document.querySelector('.video-container video');
 
@@ -212,11 +211,12 @@ function footerAnimation() {
     })
   })
 }
+
+locomotive()
+
 loadingAnimation()
 
 curserAnimation()
-
-locomotive()
 
 sheryjs()
 
